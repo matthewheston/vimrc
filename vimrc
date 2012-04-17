@@ -81,6 +81,12 @@ noremap <c-h> <c-w>h
 
 "NERDTREE
 nnoremap <Leader>nt :NERDTreeToggle<cr>
+
+"Vimux
+nnoremap <Leader>tp :PromptVimTmuxCommand<cr>
+nnoremap <Leader>tg :InspectVimTmuxRunner<cr>
+nnoremap <Leader>tx :CloseVimTmuxPanes<cr>
+vnoremap <Leader>ts "vy :call RunVimTmuxCommand(@v)<CR>
 "}}}
 
 "Python {{{
@@ -118,6 +124,7 @@ Bundle 'jQuery'
 Bundle 'Shougo/neocomplcache'
 Bundle 'tpope/vim-commentary'
 Bundle 'VimClojure'
+Bundle 'benmills/vimux'
 "}}}
 
 "neocomplcache {{{
