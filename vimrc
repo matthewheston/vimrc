@@ -132,6 +132,8 @@ let g:neocomplcache_enable_underbar_completion = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 1
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+"automatically select first
+let g:neocomplcache_enable_auto_select = 1
 
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
