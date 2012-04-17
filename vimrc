@@ -56,6 +56,9 @@ autocmd BufReadPost *
 "Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
+"set filetype for clj files
+autocmd BufRead,BufNewFile *.clj set filetype=clojure
+
 "}}}
 
 "Mappings {{{
@@ -114,6 +117,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'jQuery'
 Bundle 'Shougo/neocomplcache'
 Bundle 'tpope/vim-commentary'
+Bundle 'VimClojure'
 "}}}
 
 "neocomplcache {{{
