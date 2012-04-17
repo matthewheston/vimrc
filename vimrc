@@ -36,6 +36,8 @@ set undolevels=1000
 set foldmethod=marker
 
 set completeopt=longest,menuone,preview
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+			\ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 set autowrite
 set showcmd
 
