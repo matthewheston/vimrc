@@ -10,10 +10,10 @@ set ruler
 set autowrite
 
 "formatting
-"tabs are 4 characters, and aren't spaces
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+"tabs are 2 characters, and aren't spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set autoindent
 set backspace=indent,eol,start
 set textwidth=0
