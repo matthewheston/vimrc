@@ -109,6 +109,15 @@ au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
 "}}}
 
+"Ruby {{{
+
+au BufRead,BufNewFile *.rb set tabstop=2
+au BufRead,BufNewFile *.rb set shiftwidth=2
+au BufRead,BufNewFile *.rb set softtabstop=2
+au BufRead,BufNewFile *.rb set expandtab
+
+"}}}
+
 "Vundle {{{
 set rtp+=~/.vim/bundle/vundle/.
 call vundle#rc()
