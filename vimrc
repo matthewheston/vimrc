@@ -18,12 +18,6 @@ set autoindent
 set backspace=indent,eol,start
 set textwidth=0
 
-
-" auto-detect the filetype
-filetype plugin indent on
-filetype plugin on
-set ofu=syntaxcomplete#Complete
-
 "searching
 set incsearch
 set hlsearch
@@ -55,10 +49,6 @@ autocmd BufReadPost *
 
 "Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
-"set filetype for clj files
-autocmd BufRead,BufNewFile *.clj set filetype=clojure
-
 "}}}
 
 "Mappings {{{
@@ -119,6 +109,8 @@ au BufRead,BufNewFile *.rb set expandtab
 "}}}
 
 "Vundle {{{
+filetype off
+
 set rtp+=~/.vim/bundle/vundle/.
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -134,6 +126,9 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'tpope/vim-commentary'
 Bundle 'VimClojure'
 Bundle 'benmills/vimux'
+
+filetype plugin indent on
+set ofu=syntaxcomplete#Complete
 "}}}
 
 "neocomplcache {{{
