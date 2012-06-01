@@ -133,6 +133,10 @@ Bundle 'VimClojure'
 Bundle 'benmills/vimux'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'html5.vim'
+Bundle 'emilkje/sparkup-bundle'
+Bundle 'groenewege/vim-less'
+Bundle 'hallison/vim-ruby-sinatra'
 
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
