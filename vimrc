@@ -77,11 +77,6 @@ nnoremap <Leader>tp :PromptVimTmuxCommand<cr>
 nnoremap <Leader>tg :InspectVimTmuxRunner<cr>
 nnoremap <Leader>tx :CloseVimTmuxPanes<cr>
 vnoremap <Leader>ts "vy :call RunVimTmuxCommand(@v)<CR>
-
-"Fuzzy Finder
-nnoremap <Leader>fb :FufBuffer<cr>
-nnoremap <Leader>ff :FufFile<cr>
-nnoremap <Leader>fd :FufDir<cr>
 "}}}
 
 "Python {{{
@@ -131,8 +126,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'tpope/vim-commentary'
 Bundle 'VimClojure'
 Bundle 'benmills/vimux'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Bundle 'ctrlp.vim'
 Bundle 'html5.vim'
 Bundle 'emilkje/sparkup-bundle'
 Bundle 'groenewege/vim-less'
