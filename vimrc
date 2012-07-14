@@ -6,6 +6,7 @@ set nocompatible
 set number
 syntax on
 set background=dark
+colorscheme solarized
 set ruler
 set autowrite
 
@@ -134,6 +135,7 @@ Bundle 'html5.vim'
 Bundle 'emilkje/sparkup-bundle'
 Bundle 'groenewege/vim-less'
 Bundle 'hallison/vim-ruby-sinatra'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
