@@ -113,6 +113,14 @@ au BufRead,BufNewFile *.rb set expandtab
 
 "}}}
 
+"Clojure{{{
+
+"VimClojure options
+let g:vimclojure#ParenRainbow=1
+let g:vimclojure#DynamicHighlighting=1
+
+"}}}
+
 "Vundle {{{
 filetype off
 
