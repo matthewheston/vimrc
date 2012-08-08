@@ -131,7 +131,7 @@ Bundle 'gmarik/vundle'
 "Bundles
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
 Bundle 'hallison/vim-markdown'
 Bundle 'jQuery'
