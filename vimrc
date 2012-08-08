@@ -22,6 +22,7 @@ set textwidth=0
 "searching
 set incsearch
 set hlsearch
+set gdefault
 
 "history
 set history=50
