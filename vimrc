@@ -50,6 +50,8 @@ autocmd BufReadPost *
 
 "Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+"Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "}}}
 
 "Mappings {{{
