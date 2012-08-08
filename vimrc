@@ -67,6 +67,7 @@ nnoremap <Leader>sv :source $MYVIMRC<cr>
 "i don't want to reach!
 inoremap jk <esc>
 
+nnoremap <Leader>hl :nohl<cr>
 "window navigation
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
