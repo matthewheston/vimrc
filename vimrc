@@ -1,5 +1,37 @@
 set nocompatible
 
+"Vundle {{{
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/.
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"Bundles
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround'
+Bundle 'hallison/vim-markdown'
+Bundle 'jQuery'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplcache-snippets-complete'
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/vimshell'
+Bundle 'tpope/vim-commentary'
+Bundle 'VimClojure'
+Bundle 'benmills/vimux'
+Bundle 'ctrlp.vim'
+Bundle 'html5.vim'
+Bundle 'emilkje/sparkup-bundle'
+Bundle 'groenewege/vim-less'
+Bundle 'hallison/vim-ruby-sinatra'
+Bundle 'altercation/vim-colors-solarized'
+
+filetype plugin indent on
+set ofu=syntaxcomplete#Complete
+"}}}
+
 "Set options {{{
 
 "Look and feel
@@ -124,38 +156,6 @@ au FileType ruby let g:rubycomplete_classes_in_global=1
 let g:vimclojure#ParenRainbow=1
 let g:vimclojure#DynamicHighlighting=1
 
-"}}}
-
-"Vundle {{{
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/.
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-"Bundles
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
-Bundle 'hallison/vim-markdown'
-Bundle 'jQuery'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippets-complete'
-Bundle 'Shougo/vimproc'
-Bundle 'Shougo/vimshell'
-Bundle 'tpope/vim-commentary'
-Bundle 'VimClojure'
-Bundle 'benmills/vimux'
-Bundle 'ctrlp.vim'
-Bundle 'html5.vim'
-Bundle 'emilkje/sparkup-bundle'
-Bundle 'groenewege/vim-less'
-Bundle 'hallison/vim-ruby-sinatra'
-Bundle 'altercation/vim-colors-solarized'
-
-filetype plugin indent on
-set ofu=syntaxcomplete#Complete
 "}}}
 
 "neocomplcache {{{
