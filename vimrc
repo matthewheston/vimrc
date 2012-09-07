@@ -51,6 +51,7 @@ autocmd BufReadPost *
 
 "Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
 "Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "}}}
@@ -68,6 +69,7 @@ nnoremap <Leader>sv :source $MYVIMRC<cr>
 inoremap jk <esc>
 
 nnoremap <Leader>hl :nohl<cr>
+
 "window navigation
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
@@ -110,6 +112,9 @@ au BufRead,BufNewFile *.rb set tabstop=2
 au BufRead,BufNewFile *.rb set shiftwidth=2
 au BufRead,BufNewFile *.rb set softtabstop=2
 au BufRead,BufNewFile *.rb set expandtab
+
+au FileType ruby let g:rubycomplete_buffer_loading=1
+au FileType ruby let g:rubycomplete_classes_in_global=1
 
 "}}}
 
@@ -155,7 +160,7 @@ set ofu=syntaxcomplete#Complete
 
 "neocomplcache {{{
 " Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
 " Use camel case completion.
@@ -163,7 +168,7 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
 " Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 1
+let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 "automatically select first
 let g:neocomplcache_enable_auto_select = 1
