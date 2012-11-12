@@ -90,6 +90,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "}}}
 
 "Mappings {{{
+"movement
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
 "leader
 let mapleader = ","
 let maplocalleader = "\\"
