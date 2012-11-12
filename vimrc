@@ -27,6 +27,7 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'groenewege/vim-less'
 Bundle 'hallison/vim-ruby-sinatra'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on
 set ofu=syntaxcomplete#Complete
