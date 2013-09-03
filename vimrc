@@ -102,7 +102,7 @@ noremap gj j
 noremap gk k
 
 "leader
-let mapleader = ","
+let mapleader = " "
 let maplocalleader = "\\"
 
 "vimrc quick edit
