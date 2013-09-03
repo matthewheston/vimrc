@@ -74,6 +74,9 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 set autowrite
 set showcmd
 
+
+let g:syntastic_mode_map = { 'mode': 'passive' }
+
 "}}}
 
 "Auto commands {{{
@@ -150,6 +153,9 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
+
+" for virtualenv-vim
+let g:virtualenv_auto_activate = 1
 
 "}}}
 
