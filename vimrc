@@ -171,6 +171,14 @@ au FileType ruby let g:rubycomplete_classes_in_global=1
 
 "}}}
 
+"Writing {{{
+
+au BufRead,BufNewFile *.md set tw=80
+au BufRead,BufNewFile *.tex set tw=80
+au BufRead,BufNewFile *.tex nnoremap <buffer> <localleader>c :!texcount -total %<CR>
+
+"}}}
+
 "Clojure{{{
 
 "VimClojure options
